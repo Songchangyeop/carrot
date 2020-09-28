@@ -18,6 +18,12 @@ body {
   border-radius: 20px;
 }
 
+.game__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 .game__button {
   width: 60px;
   height: 60px;
@@ -31,12 +37,6 @@ body {
   transform: scale(1.1);
 }
 
-.game__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
 .game__timer {
   width: 100px;
   background-color: white;
@@ -57,13 +57,14 @@ body {
   border: 3px solid black;
   background-color: darksalmon;
   color: white;
+  line-height: 100%;
 }
 
 .game__field {
+  position: relative;
   width: 100%;
   height: 100%;
   margin-top: 40px;
-  opacity: 0.4;
 }
 
 .pop-up {
