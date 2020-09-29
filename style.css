@@ -5,6 +5,7 @@ button {
 }
 
 body {
+  background-color: black;
   text-align: center;
 }
 
@@ -45,6 +46,9 @@ body {
   border-radius: 20px;
   font-size: 32px;
   margin-top: 8px;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__score {
@@ -58,6 +62,9 @@ body {
   background-color: darksalmon;
   color: white;
   line-height: 100%;
+  visibility: hidden;
+  user-select: none;
+  cursor: auto;
 }
 
 .game__field {
@@ -95,4 +102,14 @@ body {
 .pop-up__message {
   display: block;
   font-size: 38px;
+}
+
+.carrot,
+.bug {
+  transition: transform 100ms ease-in;
+}
+
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
 }
