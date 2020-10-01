@@ -131,7 +131,7 @@ function onFieldClick(event) {
   }
   const target = event.target;
   if (target.matches('.carrot')) {
-    //   당근!!
+    //   당근일 때
     target.remove();
     score++;
     playsound(carrotSound);
@@ -140,6 +140,7 @@ function onFieldClick(event) {
       finisheGame(true);
     }
   } else if (target.matches('.bug')) {
+    // 벌레일 때
     finisheGame(false);
   }
 }
