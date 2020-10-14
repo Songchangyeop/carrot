@@ -18,11 +18,11 @@ game.setGameStopListener((reason) => {
       sound.playAlert();
       break;
     case Reason.win:
-      message = 'You Win !';
+      message = 'You Won!!';
       sound.playWin();
       break;
     case Reason.lose:
-      message = 'You Lost !';
+      message = 'You Lost!!';
       sound.playBug();
       break;
     default:
